@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="HandheldFriendly" content="true">
+      <title>Resarche</title>
+      <link rel="shortcut icon" href="img/logo.png">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- font awsome -->
+      <link rel="stylesheet" href="fonts/font-awsome/css/all.min.css">
+      <link rel="stylesheet" href="css/animate.css">
+      <!-- special for this page -->
+      <link rel="stylesheet" href="css/jquery.dataTables.min.css">
+      <link rel="stylesheet" href="css/responsive.dataTables.min.css">
+      <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+      <!-- end special for this page -->
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <!-- header -->
+      <div id="page-container">
+         <section class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-4 aligne-right">
+                     <div class="dropdown1">
+                        <button class="dropbtn">اللغة<i class="fa fa-angle-down"></i> </button>
+                        <div class="dropdown-content">
+                           <a href="#">English</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-4 aligne-centerrelative">
+                     <div class="logo-abs"> <img class=" wow zoomIn " src="img/logo.png"> </div>
+                  </div>
+                  <div class="col-4 aligne-left">
+                     <a href="login.html" class="log-out">تسجيل الخروج</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="content" id="content-wrap">
+            <div class="container">
+               <p class="header-title">الرسائل العلمية</p>
+               <table id="example" class="display responsive nowrap table-marg-bottom">
+                  <thead>
+                     <tr>
+                        <th>عنوان البحث</th>
+                        <th>التخصص </th>
+                        <th>تاريخ الاصدار</th>
+                        <th>الكلية</th>
+                        <th>القسم العلمي</th>
+                        <th>عمليات</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>الذكاء الاصطناعي</td>
+                        <td>الذكاء الاصطناعي</td>
+                        <td>2019</td>
+                        <td>اتصالات</td>
+                        <td>61</td>
+                        <td class="flex-td">
+                           <div><a href="#"><i class="fas fa-download"></i></a></div>
+                           <div><a href="img/html_tutorial.pdf" data-fancybox="gallery" class="product"><i class="fas fa-eye"></i></a></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>plc</td>
+                        <td>التحكم المدمج</td>
+                        <td>2015</td>
+                        <td>كهربا</td>
+                        <td>61</td>
+                        <td class="flex-td">
+                           <div><a href="#"><i class="fas fa-download"></i></a></div>
+                           <div><a href="img/html_tutorial.pdf" data-fancybox="gallery" class="product"><i class="fas fa-eye"></i></a></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>microcontrol</td>
+                        <td>micro</td>
+                        <td>2000</td>
+                        <td>حاسبات</td>
+                        <td>61</td>
+                        <td class="flex-td">
+                           <div><a href="#"><i class="fas fa-download"></i></a></div>
+                           <div><a href="img/html_tutorial.pdf" data-fancybox="gallery" class="product"><i class="fas fa-eye"></i></a></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>برمجة مواقع</td>
+                        <td>برمجة مواقع</td>
+                        <td>2009</td>
+                        <td>حاسبات</td>
+                        <td>61</td>
+                        <td class="flex-td">
+                           <div><a href="#"><i class="fas fa-download"></i></a></div>
+                           <div><a href="img/html_tutorial.pdf" data-fancybox="gallery" class="product"><i class="fas fa-eye"></i></a></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>اندرويد</td>
+                        <td>اندرويد</td>
+                        <td>2017</td>
+                        <td>حاسبات</td>
+                        <td>61</td>
+                        <td class="flex-td">
+                           <div><a href="#"><i class="fas fa-download"></i></a></div>
+                           <div><a href="img/html_tutorial.pdf" data-fancybox="gallery" class="product"><i class="fas fa-eye"></i></a></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>برمجة مواقع</td>
+                        <td>برمجة مواقع</td>
+                        <td>2009</td>
+                        <td>حاسبات</td>
+                        <td>61</td>
+                        <td class="flex-td">
+                           <div><a href="#"><i class="fas fa-download"></i></a></div>
+                           <div><a href="img/html_tutorial.pdf" data-fancybox="gallery" class="product"><i class="fas fa-eye"></i></a></div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <div class="know-height">
+                  <div class="buttons abutton " data-toggle="modal" data-target="#demo1">
+                     <div class="button-hover" href="#"><span></span>اضافة بحث </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Modal -->
+         <div class="modal fade" id="demo1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog opacity-animate4">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>-->
+                     <form method="post" class="form-login width100">
+                        <div class="form-group width100">
+                           <label for="usr" class="label-abs"><img src="img/analytics.png"></label>
+                           <input type="text" class="form-control indent" id="usr" placeholder="عنوان البحث العلمي">
+                        </div>
+                        <div class="form-group width100">
+                           <label for="usr" class="label-abs"><img src="img/certificate.png"></label>
+                           <input type="text" class="form-control indent" id="usr" placeholder="التخصص ">
+                        </div>
+                        <div class="form-group width100">
+                           <label for="usr" class="label-abs"><img src="img/calendar.png"></label>
+                           <input type="text" class="form-control indent" id="usr" placeholder="تاريخ الاصدار">
+                        </div>
+                        <div class="form-group width100">
+                           <label for="usr" class="label-abs"><img src="img/school.png"></label>
+                           <input type="text" class="form-control indent" id="usr" placeholder="الكلية">
+                        </div>
+                        <div class="form-group width100">
+                           <label for="usr" class="label-abs"><img src="img/academy.png"></label>
+                           <input type="text" class="form-control indent" id="usr" placeholder="القسم العلمي">
+                        </div>
+                        <div class="form-group width100">
+                           <input id="uploadFile" class="f-input" />
+                           <div class="fileUpload btn btn--browse">
+                              <span>ارفع الملف</span>
+                              <input id="uploadBtn" type="file" class="upload" accept="application/pdf" multiple />
+                           </div>
+                        </div>
+                        <div class="form-group align-center marg0 relative">
+                           <button class="buttons" type="submit" data-toggle="modal" data-target="#demo1">
+                              <div class="button-hover"><span></span>اضافة</div>
+                           </button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- footer -->
+         <section class="footer" id="footer">
+            <p>جميع الحقوق محفوظة © 2019 © كليات عنيزة</p>
+         </section>
+      </div>
+      <!-- content -->
+      <!-- scripts -->
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/wow.min.js"></script>
+      <!-- special for this page -->
+      <script src="js/jquery.dataTables.min.js"></script>
+      <script src="js/dataTables.responsive.min.js"></script>
+      <script>
+         $(document).ready(function() {
+             $('#example').DataTable({
+                 "oLanguage": {
+         
+                     "sSearch": "ابحث هنا"
+         
+                 }
+             });
+         
+         });
+         
+         
+         
+         document.getElementById("uploadBtn").onchange = function() {
+             document.getElementById("uploadFile").value = this.value.replace("C:\\fakepath\\", "");
+         };
+         
+      </script>
+      <script src="js/jquery.fancybox.min.js"></script>
+      <!-- end special for this page -->
+      <script src="js/js.js"></script>
+   </body>
+</html>

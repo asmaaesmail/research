@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <title>Resarche</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="fonts/font-awsome/css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div id="page-container">
+        <section class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 aligne-right">
+                        <div class="dropdown1">
+                            <button class="dropbtn">اللغة<i class="fa fa-angle-down"></i> </button>
+                            <div class="dropdown-content">
+                                <a href="#">English</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 aligne-centerrelative">
+                        <div class="logo-abs"> <img class=" wow zoomIn " src="img/logo.png"> </div>
+                    </div>
+                    <div class="col-4 aligne-left">
+                        <a href="login.html" class="log-out">تسجيل الخروج</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content" id="content-wrap">
+            <div class="container">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">البيانات الشخصية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">البيانات الوظفية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">الاهتمامات البحثية</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="have-detalis">
+                            <p><span class="label-span">الاسم : </span><span>اسماء اسماعيل محمد </span></p>
+                            <p><span class="label-span">الجنس : </span><span> انثي </span></p>
+                            <p><span class="label-span">الجنسية : </span><span>مصرية </span></p>
+                            <p><span class="label-span">اخر مؤهل علمي : </span><span> بكالريوس </span></p>
+                            <p><span class="label-span">التخصص العام: </span><span>حاسبات ونظم التحكم </span></p>
+                            <p><span class="label-span">التخصص الدقيق: </span><span>حاسبات ونظم التحكم </span></p>
+                        </div>
+                        <div class="buttons " data-toggle="modal" data-target="#demo1">
+                            <div class="button-hover" ><span></span>تعديل</div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="have-detalis">
+                            <p><span class="label-span">الكلية : </span><span>الهندسة </span></p>
+                            <p><span class="label-span">القسم العلمي : </span><span> حاسبات ونظم تحكم </span></p>
+                            <p><span class="label-span">الدرجة الوظيفية : </span><span>معيد </span></p>
+                            <p><span class="label-span">سنة التعيين : </span><span> 2017 </span></p>
+                        </div>
+                        <div class="buttons " data-toggle="modal" data-target="#demo2">
+                            <div class="button-hover"><span></span>تعديل</div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="have-detalis">
+                            <p><span class="label-span">قائمة بالاهتمامات البحثية</span></p>
+                            <ul>
+                                <li>
+                                    متابعة الابحاث العلمية الجديدة في مجال الذكاء الاصطناعي
+                                </li>
+                                <li>
+                                    متابعة الابحاث العلمية الجديدة في مجال الذكاء الاصطناعي
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="buttons " data-toggle="modal" data-target="#demo3">
+                            <div class="button-hover" ><span></span>اضافة</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal -->
+        <div class="modal fade" id="demo1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog opacity-animate4">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>-->
+                        <form method="post" class="form-login width100">
+                            <div class="form-group width100">
+                                <label for="usr" class="label-abs"><img src="img/certificate.png"></label>
+                                <input type="text" class="form-control indent" id="usr" placeholder="اخر مؤهل علمي">
+                            </div>
+                            <div class="form-group width100">
+                                <label for="usr" class="label-abs"><img src="img/contract.png"></label>
+                                <input type="text" class="form-control indent" id="usr" placeholder="التخصص العام">
+                            </div>
+                            <div class="form-group width100">
+                                <label for="usr" class="label-abs"><img src="img/resume.png"></label>
+                                <input type="text" class="form-control indent" id="usr" placeholder="التخصص الدقيق">
+                            </div>
+                            <div class="form-group align-center marg0 relative">
+                                <button class="buttons" type="submit" data-toggle="modal" data-target="#demo1">
+                                    <div class="button-hover" ><span></span>تعديل</div>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="demo2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog opacity-animate4">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>-->
+                        <form method="post" class="form-login width100">
+                            <div class="form-group width100">
+                                <label for="usr" class="label-abs"><img src="img/school.png"></label>
+                                <input type="text" class="form-control indent" id="usr" placeholder="الكلية">
+                            </div>
+                            <div class="form-group width100">
+                                <label for="usr" class="label-abs"><img src="img/academy.png"></label>
+                                <input type="text" class="form-control indent" id="usr" placeholder="القسم العلمي">
+                            </div>
+                            <div class="form-group width100">
+                                <label for="usr" class="label-abs"><img src="img/diploma.png"></label>
+                                <input type="text" class="form-control indent" id="usr" placeholder="الدرجة الوظيفية">
+                            </div>
+                            <div class="form-group width100">
+                                <label for="usr" class="label-abs"><img src="img/calendar.png"></label>
+                                <input type="text" class="form-control indent" id="usr" placeholder="سنة التعيين">
+                            </div>
+                            <div class="form-group align-center marg0 relative">
+                                <button class="buttons" type="submit" data-toggle="modal" data-target="#demo4">
+                                    <div class="button-hover" ><span></span>تعديل</div>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="demo3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog opacity-animate4">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>-->
+                        <form method="post" class="form-login  form-add">
+
+
+                            <div class="input_fields_wrap">
+
+                                <div class="form-group width100">
+                                    <label for="usr" class="label-abs"><img src="img/social.png"></label>
+                                    <input type="text" class="form-control indent" id="usr" placeholder="اهتماماتك">
+                                </div>
+                                <div class="form-group width100">
+                                    <label for="usr" class="label-abs"><img src="img/social.png"></label>
+                                    <input type="text" class="form-control indent" id="usr" placeholder="اهتماماتك">
+                                </div>
+
+
+                            </div>
+                            <div class="add_field_button">اضافة اهتمامات اخري</div>
+                            <div class="form-group align-center marg0 relative">
+                                <button type="submit" class="buttons " data-toggle="modal" data-target="#demo4">
+                                    <div class="button-hover"><span></span>تعديل</div>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <section class="footer" id="footer">
+            <p>جميع الحقوق محفوظة © 2019 © كليات عنيزة</p>
+        </section>
+    </div>
+    <!-- content -->
+    <!-- scripts -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/js.js"></script>
+    <script>
+        $(document).ready(function() {
+            var wrapper = $(".input_fields_wrap"); //Fields wrapper
+            var add_button = $(".add_field_button"); //Add button ID
+
+
+            $(add_button).click(function(e) { //on add input button click
+                e.preventDefault();
+                $(wrapper).append('<div class="form-group width100"> <label for="usr" class="label-abs"><img src="img/social.png"></label> <input type="text" class="form-control indent" id="usr" placeholder="سنة التعيين"> <a href="#" class="remove_field"><i class="fas fa-times"></i></a></div>'); //add 
+            });
+
+            $(wrapper).on("click", ".remove_field", function(e) { //user click on remove text
+                e.preventDefault();
+                $(this).parent('div').remove();
+
+            })
+        });
+
+    </script>
+</body>
+
+</html>

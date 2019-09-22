@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <title>Resarche</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="fonts/font-awsome/css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- special for this page -->
+    <link rel="stylesheet" href="css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <!-- end special for this page -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+
+    <div id="page-container">
+        <section class="header">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-4 aligne-right">
+                        <div class="dropdown1">
+                            <button class="dropbtn">اللغة<i class="fa fa-angle-down"></i> </button>
+                            <div class="dropdown-content">
+                                <a href="#">English</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 aligne-centerrelative">
+                        <div class="logo-abs"> <img class=" wow zoomIn " src="img/logo.png"> </div>
+                    </div>
+                    <div class="col-4 aligne-left">
+                        <a href="login.html" class="log-out">تسجيل الخروج</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="content" id="content-wrap">
+            <div class="container">
+                <p class="header-title">اعضاء هيئة التدريس</p>
+                <table id="example" class="display responsive nowrap table-marg-bottom">
+                    <thead>
+                        <tr>
+                         
+                           <th>رقم</th>
+                            <th>اسم عضو هيئة التدريس</th>
+                            <th>االجنسية </th>
+                            <th>التخصص العام</th>
+                            <th> التخصص الدقيق</th>
+                            <th>الكلية </th>
+                            <th>القسم العلمي</th>
+                            <th>الدرجة الوظفية</th>
+                            <th>سنة التعيين</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                           <td></td>
+                            <td><a href="profile.html">اسماء اسماعيل محمد</a></td>
+                            <td>مصرية</td>
+                            <td>حاسبات ونظم تحكم</td>
+                            <td> برمجة</td>
+                            <td>هندسة </td>
+                            <td>حاسبات</td>
+                            <td>معيد</td>
+                            <td>2017</td>
+                        </tr>
+                        
+                        <tr>
+                            <td></td>
+                            <td><a href="profile.html">محمد ابراهيم السيد</a></td>
+                            <td>مصري</td>
+                            <td>اتصالات</td>
+                            <td>امبيديد سيستم</td>
+                            <td>هندسة </td>
+                            <td>اتصالات</td>
+                            <td>دكتور</td>
+                            <td>2000</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><a href="profile.html">احمد علي محمد</a></td>
+                            <td>مصري</td>
+                            <td>مدني</td>
+                            <td> طرق</td>
+                            <td>هندسة </td>
+                            <td>مدني</td>
+                            <td>معيد</td>
+                            <td>2018</td>
+                        </tr>
+                        
+                       
+                    </tbody>
+                </table>
+               
+            </div>
+
+        </section>
+
+
+        <!-- footer -->
+        <section class="footer" id="footer">
+            <p>جميع الحقوق محفوظة © 2019 © كليات عنيزة</p>
+        </section>
+    </div>
+    <!-- content -->
+    <!-- scripts -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- special for this page -->
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.responsive.min.js"></script>
+    <script>
+       $(document).ready(function() {
+    var t = $('#example').DataTable( {
+        "columnDefs": [ {
+            "searchable": false,
+            "orderable": false,
+            "targets": 0
+        } ],
+        "order": [[ 1, 'asc' ]]
+    } );
+ 
+    t.on( 'order.dt search.dt', function () {
+        t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+            cell.innerHTML = i+1;
+        } );
+    } ).draw();
+} );
+
+
+        document.getElementById("uploadBtn").onchange = function() {
+            document.getElementById("uploadFile").value = this.value.replace("C:\\fakepath\\", "");
+        };
+
+    </script>
+    <script src="js/jquery.fancybox.min.js"></script>
+  <!-- end special for this page -->
+    <script src="js/js.js"></script>
+</body>
+
+</html>
